@@ -43,6 +43,7 @@ export function Profile() {
                 <button
                     onClick={() => connect({ connector: metamaskConnector })}
                     disabled={status === 'pending'}
+                    className="bg-orange-500 hover:bg-orange-200"
                 >
                     Connect Wallet (MetaMask)
                 </button>
