@@ -1,0 +1,18 @@
+---
+import Layout from '../layouts/Layout.astro'
+import MetaMask_Fox_Logo from '../assets/MetaMask_Fox.svg'
+import {App} from "../components/wagmi/app"
+---
+
+<Layout>
+  <h1 class="text-3xl font-bold underline">LedgerGrad</h1>
+  <h2>Your diploma on the blockchain</h2>
+
+  <div style="height: 20px; width: 20px; border: 1px solid black;">
+    <MetaMask_Fox_Logo />
+  </div>
+
+  <!-- React component must be client-side -->
+  <App client:only="react">
+  </App>
+</Layout>
